@@ -1,0 +1,20 @@
+server.port=8081
+spring.datasource.url=jdbc:postgresql://localhost:5432/userdb
+spring.datasource.username=postgres
+spring.datasource.password=root
+
+spring.datasource.hikari.connectionTimeout=20000
+spring.datasource.hikari.maximumPoolSize=5
+
+spring.jpa.hibernate.ddl-auto=none
+spring.jpa.database-platform=org.hibernate.dialect.PostgreSQLDialect
+spring.jpa.show-sql=false
+spring.liquibase.enabled=false
+
+
+
+
+# liquibase configuration
+spring.liquibase.change-log=classpath:/db/changelog-master.yaml
+logging.level.liquibase = INFO
+
